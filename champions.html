@@ -42,6 +42,19 @@
       text-decoration: none;
       font-size: 1.1em;
     }
+    .notice-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
   </style>
 </head>
 
@@ -57,6 +70,10 @@
   ">
     ← 戻る
   </button>
+</div>
+
+<div class="notice-banner">
+  各チャンピオンごとの情報は現在編集中です
 </div>
 
 <body>
@@ -85,7 +102,7 @@
   
   deta-roleの横に data-name="チャンピオン名"を追加
   
-  　　　　　　　  完了　　　　　　　　　-->
+  　　　　　　　  ゾーイまで完了　　　　　　　　　-->
 
 <div class="champion-grid">   
 
@@ -299,7 +316,7 @@
 
 <div class="champion-card" data-role="JG" data-kana="カ" data-search="カジックス,かじっくす,khazix">
   <a href="champions/khazix.html">
-    <img src="champion_picture/Khazix_0.jpg" alt="カ＝ジックス">
+    <img src="champion_picture/KhaZix_0.jpg" alt="カ＝ジックス">
   </a>
   <p><a href="champions/khazix.html">カ＝ジックス</a></p>
 </div>
@@ -1137,8 +1154,8 @@
   <p><a href="champions/hecarim.html">ヘカリム</a></p>
 </div>
 
-  <div class="champion-card">
-    <a href="champions/veigar.html">
+<div class="champion-card">
+  <a href="champions/veigar.html">
     <img src="champion_picture/Veigar_0.jpg" alt="ベイガー">
   </a>
   <p><a href="champions/veigar.html">ベイガー</a></p>
@@ -1392,7 +1409,7 @@
 
 <div class="champion-card" data-role="MID" data-kana="ル" data-search="ルブラン,るぶらん,leblanc">
   <a href="champions/leblanc.html">
-    <img src="champion_picture/Leblanc_0.jpg" alt="ルブラン">
+    <img src="champion_picture/LeBlanc_0.jpg" alt="ルブラン">
   </a>
   <p><a href="champions/leblanc.html">ルブラン</a></p>
 </div>
@@ -1602,6 +1619,19 @@
     filterChampions("");
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const championLinks = document.querySelectorAll('.champion-card a');
+
+    championLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // 元のリンクをキャンセル
+        window.location.href = 'under-construction.html'; // 工事中ページへリダイレクト
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
 
