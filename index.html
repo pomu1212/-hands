@@ -212,16 +212,16 @@
 
 <header>
   <div class="logo" style="display: flex; align-items: center; gap: 10px;">
-    <img src="6_20250128122236.png" alt="Logo" style="height:80px;"> <!-- ←ここ：ロゴ画像 -->
+    <img src="Hnslogo.png" alt="Logo" style="height:80px;"> <!-- ←ここ：ロゴ画像 -->
     <span style="font-size: 24px; font-weight: bold; color: white;">HANDS Esports</span> <!-- ←ここ：チーム名 -->
   </div>
   <nav>
     <a href="under-construction.html">About</a>
-    <a href="under-construction.html">Teams</a>
+    <a href="募集ページ.html">HANDSの魅力</a>
     <a href="under-construction.html">News</a>
     <a href="under-construction.html">Partners</a>
     <a href="under-construction.html">Community</a>
-    <a href="under-construction.html">Shop</a>
+    <a href="apply.html">応募フォーム</a>
     <a href="champions.html">チャンピオン一覧</a>
   </nav>
 </header>
@@ -259,7 +259,7 @@
       <h3>TOP</h3>
       <div class="slider">
         <div class="slides">
-          <img src="member1.jpg" alt="Top 1">
+          <img src="lessre.png" alt="Top 1">
           <img src="" alt="Top 2">
           <img src="top3.jpg" alt="Top 3"> <!-- ←ここ：各ロールの画像（好きに変更可） -->
         </div>
@@ -272,7 +272,7 @@
       <div class="slider">
         <div class="slides">
           <img src="5.png" alt="Jungle 1">
-          <img src="lisiten.png" alt="Jungle 2">
+          <img src="nite.png" alt="Jungle 2">
         </div>
       </div>
     </div>
@@ -283,7 +283,7 @@
       <div class="slider">
         <div class="slides">
           <img src="inaka.jpg" alt="Mid 1">
-          <img src="mid2.jpg" alt="Mid 2">
+          <img src="tetorasu.png" alt="Mid 2">
         </div>
       </div>
     </div>
@@ -293,8 +293,8 @@
       <h3>ADC</h3>
       <div class="slider">
         <div class="slides">
-          <img src="adc1.jpg" alt="ADC 1">
-          <img src="adc2.jpg" alt="ADC 2">
+          <img src="hasiru.png" alt="ADC 1">
+          <img src="yuki.png" alt="ADC 2">
         </div>
       </div>
     </div>
@@ -325,7 +325,7 @@
         <img src="champion_picture/Azir_0.jpg" alt="Azir">
       </a>
       <a href="champions/leesin.html">
-        <img src="champion_picture/LeeSin_0.jpg" alt="Lee Sin">
+        <img src="champion_picture/Leesin_0.jpg" alt="Lee Sin">
       </a>
       <a href="champions/jayce.html">
         <img src="champion_picture/Jayce_0.jpg" alt="Jayce">
@@ -357,7 +357,7 @@
         <img src="champion_picture/Azir_0.jpg" alt="Azir">
       </a>
       <a href="champions/leesin.html">
-        <img src="champion_picture/LeeSin_0.jpg" alt="Lee Sin">
+        <img src="champion_picture/Leesin_0.jpg" alt="Lee Sin">
       </a>
       <a href="champions/jayce.html">
         <img src="champion_picture/Jayce_0.jpg" alt="Jayce">
@@ -401,19 +401,40 @@
   <div class="swiper practiceSwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <video src="practice1.mp4" muted playsinline controls></video>
+        <div class="youtube-container">
+          <iframe src="https://www.youtube.com/embed/9K1Rov_wLu4?autoplay=1&mute=1"
+  title="YouTube video" frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen></iframe>
+        </div>
       </div>
       <div class="swiper-slide">
-        <video src="practice2.mp4" muted playsinline controls></video>
+        <div class="youtube-container">
+          <iframe src="https://www.youtube.com/watch?v=9K1Rov_wLu4&list=PLVkXLu8T72EgD8F0velwVLuzh6WJYUPxn&index=2" title="YouTube video 2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
       <div class="swiper-slide">
-        <video src="practice3.mp4" muted playsinline controls></video>
+        <div class="youtube-container">
+          <iframe src="https://www.youtube.com/watch?v=EtLLVEaUaTc&list=PLVkXLu8T72EjZq3RBhpjXp-GKPyL2hI9g" title="YouTube video 3" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
       <div class="swiper-slide">
-        <video src="practice4.mp4" muted playsinline controls></video>
+        <div class="youtube-container">
+          <iframe src="https://www.youtube.com/embed/リンク4" title="YouTube video 4" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
       <div class="swiper-slide">
-        <video src="practice5.mp4" muted playsinline controls></video>
+        <div class="youtube-container">
+          <iframe src="https://www.youtube.com/embed/リンク5" title="YouTube video 5" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
@@ -425,8 +446,6 @@
 
 <!-- SwiperのJS読み込み -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
 
 <script>
   const swiper = new Swiper(".practiceSwiper", {
@@ -449,68 +468,39 @@
     breakpoints: {
       0: { slidesPerView: 1 },
       768: { slidesPerView: 3 }
-    },
-    on: {
-      init: function () {
-        playActiveSlide();
-      },
-      slideChangeTransitionEnd: function () {
-        playActiveSlide();
-      },
     }
   });
-
-  // ⬇ 中央スライドだけを再生・終了監視する関数
-  function playActiveSlide() {
-    const slides = document.querySelectorAll(".swiper-slide");
-    slides.forEach((slide) => {
-      const video = slide.querySelector("video");
-      if (!video) return;
-
-      if (slide.classList.contains("swiper-slide-active")) {
-        video.currentTime = 0;
-        video.play();
-
-        // 一度イベントを削除してから登録（重複防止）
-        video.onended = () => {
-          swiper.slideNext();
-        };
-      } else {
-        video.pause();
-        video.onended = null;
-      }
-    });
-  }
-
-  // autoplay属性は不要なのでHTML側からも削除してください
 </script>
-
 
 <style>
   .swiper.practiceSwiper {
     width: 100%;
-    padding-bottom: 60px; /* 矢印のスペース確保 */
+    padding-bottom: 60px;
   }
 
   .practiceSwiper .swiper-slide {
-    width: 300px;  /* 固定幅にして揃える */
-    height: 180px; /* ← チャンピオン画像と高さ統一 */
+    width: 300px;
+    height: 180px;
   }
 
-  .practiceSwiper .swiper-slide video {
+  .practiceSwiper .swiper-slide iframe {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    object-fit: cover;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: #ffe25f; /* 矢印の色（黄色） */
+    color: #ffe25f;
+  }
+
+  .youtube-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
 </style>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
