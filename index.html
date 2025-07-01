@@ -2,6 +2,7 @@
  <!-- 400~414の動画ファイル読み込み部分を削除して、408~433まで最新10動画が表示されるよう変更jsから動画が流れます6/28  -->
 <!-- 230 home.mp4をhome1.mp4に変更して著作権に関係する動画がながれないように tetras256  -->
  <!-- 548～559のコードを削除するとチャンピオン一覧の工事中が消えてページに飛べるようになります tetras256  -->
+  
   <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -113,7 +114,7 @@
   flex-shrink: 0;
   border-radius: 8px;
 }
-    }
+    
 
     footer {
       background: #111;
@@ -168,7 +169,7 @@
   }
 }
 
-}
+
 .champion-grid {
   display: flex;
   flex-wrap: wrap;
@@ -189,6 +190,25 @@
 
 .champion-card:hover {
   transform: scale(1.05);
+}
+
+header nav a:hover {
+  color: #00bfff;
+  text-shadow: 0 0 8px #00bfff;
+  transition: all 0.3s ease;
+}
+
+.role-box {
+  transition: all 0.3s ease;
+}
+.role-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00bfff;
+}
+
+.champion-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00bfff;
 }
 
 .champion-link-title {
@@ -216,11 +236,11 @@
     <span style="font-size: 24px; font-weight: bold; color: white;">HANDS Esports</span> <!-- ←ここ：チーム名 -->
   </div>
   <nav>
-    <a href="under-construction.html">About</a>
-    <a href="募集ページ.html">HANDSの魅力</a>
-    <a href="under-construction.html">News</a>
-    <a href="under-construction.html">Partners</a>
-    <a href="under-construction.html">Community</a>
+    <a href="under-construction.html">概要</a>
+    <a href="under-construction.html">お知らせ</a>
+    <a href="under-construction.html">スポンサー</a>
+    <a href="under-construction.html">お問い合わせ</a>
+    <a href="募集ページ.html">hansの魅力</a>
     <a href="apply.html">応募フォーム</a>
     <a href="champions.html">チャンピオン一覧</a>
   </nav>
