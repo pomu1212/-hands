@@ -118,7 +118,7 @@
 
 .slides img {
   width: 100%;
-  height: 150px;            /* ★ ここで高さを統一 */
+  height: 300px;            /* ★ ここで高さを統一 */
   object-fit: cover;        /* ★ はみ出た部分をトリミングして自然に見せる */
   flex-shrink: 0;
   border-radius: 8px;
@@ -439,14 +439,14 @@ header nav a:hover {
       </div>
       <div class="swiper-slide">
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/9K1Rov_wLu4&list=PLVkXLu8T72EgD8F0velwVLuzh6WJYUPxn&index=2" title="YouTube video 2" frameborder="0"
+          <iframe src="https://www.youtube.com/watch?v=9K1Rov_wLu4&list=PLVkXLu8T72EgD8F0velwVLuzh6WJYUPxn&index=2" title="YouTube video 2" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/EtLLVEaUaTc&list=PLVkXLu8T72EjZq3RBhpjXp-GKPyL2hI9g" title="YouTube video 3" frameborder="0"
+          <iframe src="https://www.youtube.com/watch?v=EtLLVEaUaTc&list=PLVkXLu8T72EjZq3RBhpjXp-GKPyL2hI9g" title="YouTube video 3" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -509,7 +509,9 @@ header nav a:hover {
 
   .practiceSwiper .swiper-slide {
     width: 300px;
-    height: 180px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
   .practiceSwiper .swiper-slide iframe {
@@ -525,10 +527,24 @@ header nav a:hover {
   }
 
   .youtube-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 </style>
 
 <script>
