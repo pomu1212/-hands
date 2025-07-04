@@ -37,12 +37,16 @@
     }
 
     /* YouTube動画＋アイコン横並び */
- .video-wrapper iframe {
-  width: 100%;  /* コンテナの最大幅まで広げる */
-  max-width: 1280px; /* 必要に応じて幅の上限を指定 */
-  height: 720px; /* 16:9の高さ */
+   .video-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #000;
+  gap: 20px; /* 40px → 20px に半分に減らす */
+  max-width: 1750px; /* 1080px × 1.25倍 */
+  margin: 0 auto;
 }
-
 
 .side-img.left img,
 .side-img.right img {
@@ -83,6 +87,7 @@
       background-color: #000;
       padding: 20px 25px;
       margin-top: 30px;
+    
       color: #d0d9e6;
       line-height: 1.7;
       font-size: 20px;
@@ -192,7 +197,7 @@
   <!-- セクション -->
   <div class="section">
 
-    <!-- チームメンバー募集 -->
+    <!-- HNS LJL選手募集 -->
     <div id="team-recruitment" class="box">
       <div class="box-content">
         <h2>チームメンバー募集</h2>
@@ -251,4 +256,3 @@
 
 </body>
 </html>
-
