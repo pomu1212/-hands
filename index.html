@@ -10,14 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HNS official</title> <!-- ←ここ：サイトタイトル -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-
   <style>
-    @font-face {
-  font-family: 'Keifont';
-  src: url('fonts/keifont.ttf') format('truetype');
-}
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -64,8 +57,6 @@
     .hero .text h1 {
       font-size: 3rem; /* ←ここ：キャッチコピーのサイズ */
       margin: 0;
-      font-family: 'Keifont', sans-serif;
-
     }
 
     .hero .text p {
@@ -118,7 +109,7 @@
 
 .slides img {
   width: 100%;
-  height: 300px;            /* ★ ここで高さを統一 */
+  height: 200px;            /* ★ ここで高さを統一 */
   object-fit: cover;        /* ★ はみ出た部分をトリミングして自然に見せる */
   flex-shrink: 0;
   border-radius: 8px;
@@ -245,26 +236,30 @@ header nav a:hover {
     <span style="font-size: 24px; font-weight: bold; color: white;">HANDS Esports</span> <!-- ←ここ：チーム名 -->
   </div>
   <nav>
-    <a href="under-construction.html">概要</a>
-    <a href="under-construction.html">お知らせ</a>
-    <a href="under-construction.html">スポンサー</a>
-    <a href="under-construction.html">お問い合わせ</a>
-    <a href="募集ページ.html">hansの魅力</a>
+    <a href="募集ページ.html">HNS選手募集</a>
     <a href="apply.html">応募フォーム</a>
     <a href="champions.html">チャンピオン一覧</a>
   </nav>
 </header>
 
 
-<section class="hero">
-  <video autoplay muted loop playsinline style="position:absolute; width:100%; height:100%; object-fit:cover; z-index:-1;">
-    <source src="home.mp4" type="video/mp4"> <!-- ←ここ：背景動画 -->
-    お使いのブラウザは動画に対応していません。
-  </video>
-  <div class="overlay"></div>
-  <div class="text">
-    <h1>“勝利は、繋がる手の中に”</h1> <!-- ←ここ：キャッチコピー -->
-    <p>その一手が、勝利を掴む！</p> <!-- ←ここ：サブコピー -->
+<section class="hero" style="position:relative;width:100%;height:100vh;overflow:hidden;">
+  <!-- 背景用 YouTube 動画 -->
+  <iframe
+    src="https://www.youtube.com/embed/Ju1eOMlwaDc?autoplay=1&mute=1&loop=1&playlist=Ju1eOMlwaDc&controls=0&modestbranding=1&showinfo=0&rel=0"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;z-index:-1;">
+  </iframe>
+
+  <!-- オーバーレイ -->
+  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:0;"></div>
+
+  <!-- テキスト -->
+  <div class="text" style="position:relative;z-index:1;color:#fff;text-align:center;top:40%;">
+    <h1>“勝利は、繋がる手の中に”</h1>
+    <p>その一手が、勝利を掴む！</p>
   </div>
 </section>
 
@@ -354,7 +349,7 @@ header nav a:hover {
         <img src="champion_picture/Azir_0.jpg" alt="Azir">
       </a>
       <a href="champions/leesin.html">
-        <img src="champion_picture/LeeSin_0.jpg" alt="Lee Sin">
+        <img src="champion_picture/Leesin_0.jpg" alt="Lee Sin">
       </a>
       <a href="champions/jayce.html">
         <img src="champion_picture/Jayce_0.jpg" alt="Jayce">
@@ -431,36 +426,35 @@ header nav a:hover {
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/9K1Rov_wLu4?autoplay=1&mute=1"
-  title="YouTube video" frameborder="0"
-  allow="autoplay; encrypted-media"
-  allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="youtube-container">
-          <iframe src="https://www.youtube.com/watch?v=9K1Rov_wLu4&list=PLVkXLu8T72EgD8F0velwVLuzh6WJYUPxn&index=2" title="YouTube video 2" frameborder="0"
+          <iframe src="https://www.youtube.com/embed/EtLLVEaUaTc?autoplay=1&mute=1" title="YouTube video 1" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/watch?v=EtLLVEaUaTc&list=PLVkXLu8T72EjZq3RBhpjXp-GKPyL2hI9g" title="YouTube video 3" frameborder="0"
+          <iframe src="https://www.youtube.com/embed/EtLLVEaUaTc?autoplay=1&mute=1" title="YouTube video 2" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/リンク4" title="YouTube video 4" frameborder="0"
+          <iframe src="https://www.youtube.com/embed/9K1Rov_wLu4?autoplay=1&mute=1" title="YouTube video 3" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/リンク5" title="YouTube video 5" frameborder="0"
+          <iframe src="https://www.youtube.com/embed/fOrYN9JkG1g?autoplay=1&mute=1" title="YouTube video 4" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="youtube-container">
+          <iframe src="https://www.youtube.com/embed/fOrYN9JkG1g?autoplay=1&mute=1" title="YouTube video 5" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -509,9 +503,7 @@ header nav a:hover {
 
   .practiceSwiper .swiper-slide {
     width: 300px;
-    display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 180px;
   }
 
   .practiceSwiper .swiper-slide iframe {
@@ -527,24 +519,10 @@ header nav a:hover {
   }
 
   .youtube-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 アスペクト比 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-}
-
-.youtube-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 </style>
 
 <script>
